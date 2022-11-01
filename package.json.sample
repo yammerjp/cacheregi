@@ -1,0 +1,14 @@
+{
+	"version": "0.0.1",
+	"cacheregi": {
+		"distribution": "build",
+		"dependencies": [
+			"./"
+			"../other-directory"
+		],
+		"scope": "yammerjp",
+		"name": "package-name",
+		"cache-seconds": "604800",
+		"registry": "http://localhost:4873"
+	}
+}

@@ -28,7 +28,7 @@ async function getPackageJson(workDir) {
 async function setupConfig(packagePath) {
   const workDir = path.resolve(packagePath)
   const packageJson = await getPackageJson(workDir)
-  const dependencies = Array.from(new Set([...(packageJson.cacheregi.dependencies), './']))
+  const dependencies = Array.from(new Set([...(packageJson.cacheregi.dependencies)])).sort()
   return {
     workDir,
     name: `@${packageJson.cacheregi.scope}/${packageJson.cacheregi.name}`,
